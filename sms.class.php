@@ -64,7 +64,6 @@ abstract class Request
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: text/xml','charset=utf-8','Expect:'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_CRLF, true);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
